@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Dados - TPF Engenharia</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 1200px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        /* Estrutura responsiva para o Power BI */
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+            margin-bottom: 20px;
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Estilo do Botão */
+        .btn {
+            display: inline-block;
+            background-color: #0078D4;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #005a9e;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>BI FLUXO BID - PROMORAR</h1>
+        
+        <div class="iframe-container">
+            <iframe 
+                title="BI_PROMORAR_SEPLAG" 
+                src="https://app.powerbi.com/view?r=eyJrIjoiNDhhNWJjY2YtYmY4OC00NjZiLWI3NGQtZGZmYjUxYjU3NDZmIiwidCI6ImQwM2EwOTJkLTg1NWUtNGYyZi1hNmNkLTBiMDI4NTU1YTAwZiJ9" 
+                frameborder="0" 
+                allowFullScreen="true">
+            </iframe>
+        </div>
+
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiNDhhNWJjY2YtYmY4OC00NjZiLWI3NGQtZGZmYjUxYjU3NDZmIiwidCI6ImQwM2EwOTJkLTg1NWUtNGYyZi1hNmNkLTBiMDI4NTU1YTAwZiJ9" target="_blank" class="btn">
+            Abrir em Tela Cheia
+        </a>
+
+        <div class="footer">
+            <p>&copy; TPF Engenharia</p>
+        </div>
+    </div>
+
+</body>
+</html>
